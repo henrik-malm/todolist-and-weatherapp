@@ -1,0 +1,145 @@
+:root {
+    --primary-bg: #1a1a2e;         /* Dark blue/purple base */
+    --secondary-bg: #16213e;       /* Slightly lighter dark blue */
+    --accent-color: #e94560;       /* Vibrant accent (buttons, borders) */
+    --accent-hover: #d03a55;       /* Slightly darker accent for hover */
+    --text-color: #ffffff;         /* White text for contrast */
+    --card-bg: rgba(255, 255, 255, 0.1);  /* Semi-transparent card background */
+  }
+  
+  /* Reset some default margins/paddings */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(135deg, var(--primary-bg), var(--secondary-bg));
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container for the weather app */
+  .weatherApp {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* Toggle Button for switching Weather/Forecast modes */
+  .toggleButton {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggleButton:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  /* Weather Form */
+  .weatherForm {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cityInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid var(--accent-color);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--text-color);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .cityInput:focus {
+    border-color: var(--text-color);
+  }
+  
+  /* Submit Button for the Form */
+  .weatherForm button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .weatherForm button[type="submit"]:hover {
+    background-color: var(--accent-hover);
+  }
+  
+  /* Weather Card styling */
+  .card {
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    display: none; /* Hidden until data is added */
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Text styling within the card */
+  .card h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  /* About Section styling */
+  .about {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  

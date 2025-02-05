@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App - CRUD with Forecast & Search</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="weatherApp">
+    <div class="controls">
+      <button class="toggleButton" id="toggle-mode">Weather</button>
+      <input type="text" id="searchBox" placeholder="Search forecast..." title="Search forecast by condition or temperature" />
+      <label>
+        <input type="checkbox" id="filterCheckbox" /> Show days above 0°C
+      </label>
+    </div>
+    
+    <form class="weatherForm">
+      <input type="text" class="cityInput" placeholder="Enter city" />
+      <button type="submit">Get Data</button>
+    </form>
+    
+    <div class="card"></div>
+    
+    <div class="about">
+      <h2>About This App</h2>
+      <p>
+        This app provides real-time weather and forecast data for any city you search.
+        It features a mode toggle (Weather / Forecast), search and filter functionality,
+        and is built with a modular CRUD approach.
+      </p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
