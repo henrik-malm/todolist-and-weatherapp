@@ -1,0 +1,23 @@
+.update-controller {
+    display:visable;
+}
+
+
+.app {
+    color: midnightblue    
+}
+/*
+// === Segment written first - to make date and year show in our span
+function displayDate(){
+    date = new Date()
+    date = date.toString().split(" ")  // konverterar datan till en array 
+    document.querySelector("#date").innerHTML = date[1]+" "+ +" "+date[2]+" "+ date[3]
+}
+
+window.onload = function(){
+    displayDate()
+}
+//==============================================================================
+
+/* console.log( )*/
+

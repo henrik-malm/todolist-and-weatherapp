@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="todolist.css">
+    <script src="todolist.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <title>What ToDo today? </title>
+  </head>
+    <body>
+        <main class="app">
+            <h1>My Todo List...</h1>
+            <div class="input-header">
+                <h1><span id="date"></span></h1>
+                <div class="to-do-input">
+                    <input type="text" id="item" placeholder="Enter a task...">
+                    <button id="enter">Enter</button>
+                </div>
+            </div>
+                <div class="to-do-list"></div>  
+                <!-- var todo list, items sköts dynamiskt med js -->
+        </main>
+
+        <div class="item">
+            <div class hidden="input-controller">
+                <textarea disabled>${itemsArray[i]}</textarea>
+                <div class="edit-controller">
+                    <i class="fa-solid fa-check deleteBtN"></i>
+                    <i class="fa-regular fa-pen-to-square EditBtn"></i>
+                </div>
+            </div>
+                <div class hidden="update-controller">
+                <button class="saveBtn">Save</button>
+                <button class="cancelBtn">Cancel</button>
+            </div>
+        </div>
+
+    </body>
+</html>
+
